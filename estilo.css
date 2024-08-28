@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 5px;
+  }
+        
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: medium; 
+    margin: 0; 
+    background-color: rgb(36, 40, 149, 0.2);
+
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;/*centraliza o menu*/
+    gap: 20px;
+}
+.container{display: grid}
+
+ul {
+    list-style-type: none;
+    color: #6513d0;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 18px 40px;
+    border: solid rgba(36, 40, 149, 0.502) 0px;
+}
+
+li {
+    float: left;
+    
+}
+
+a:hover {
+    background-color: rgb(36, 40, 149);
+    color: white;
+    font-size: 21px;
+    font-style: normal;
+}
+
+.principal {
+    font-size: 20px;
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+h1 {
+    color: rgb(36, 40, 149);
+    text-align: center;
+    font-size: 60px;
+
+}
+
+h2 {            
+    color: rgb(36, 40, 149);
+    font-size: 40px;
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+
+}
+
+/* For mobile phones: */
+    [class*="col-"] {
+    width: 100%;
+    }
+
+  @media only screen and (min-width: 600px) {
+    /* For table7 */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+      
+    }
+    
+   
+  @media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+  
+}
+
+div.absolute {position: absolute; top: 300px; right: 0; width: 20%;}
+
+.card {
+
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+.card img {
+
+    border-radius: 25px 25px 25px 25px;
+}
+
+#meuBotao {
+    width: 80px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background-color: rgb(36, 40, 149, 0.4); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    
+    /* Centralizar o botão dentro da célula */
+    display: block;
+    margin: auto 0;
+  }
+  
+  /* Opcional: Mudança de cor ao passar o mouse */
+  #meuBotao:hover {
+    background-color: rgb(36, 40, 149);
+  }
+  
