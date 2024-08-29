@@ -1,146 +1,158 @@
+/* Aplica box-sizing para incluir padding e border na largura/altura */
 * {
-    box-sizing: border-box;
-    padding: 2px;
-    margin: 5px;
-  }
-        
+    box-sizing: border-box; 
+    padding: 2px; /* Define o padding padrão */
+    margin: 5px; /* Define a margem padrão */
+}
+
+/* Estiliza o corpo da página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    font-size: medium; 
-    margin: 0; 
-    background-color: rgb(36, 40, 149, 0.2);
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
+    font-size: medium; /* Tamanho de fonte médio */
+    margin: 0;  
+    background-color: rgb(36, 40, 149, 0.2); /* Define a cor de fundo com opacidade */
 }
 
+/* Estiliza o menu */
 .menu {
-    grid-column-start: 6;
-    grid-column-end: 12;
-    justify-content: center;/*centraliza o menu*/
-    gap: 20px;
+    grid-column-start: 6; /* Inicia na coluna 6 */
+    grid-column-end: 12; /* Termina na coluna 12 */
+    justify-content: center; /* Centraliza o conteúdo do menu */
+    gap: 20px; /* Espaço entre os elementos do menu */
 }
-.container{display: grid}
 
+/* Define o container como grid */
+.container {
+    display: grid; /* Exibe os elementos em grid */
+}
+
+/* Estiliza listas não ordenadas */
 ul {
-    list-style-type: none;
-    color: #6513d0;
+    list-style-type: none; /* Remove marcadores da lista */
+    color: #6513d0; /* Define a cor do texto */
 }
 
+/* Estiliza links e links visitados */
 a,
 a:link {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 18px 40px;
-    border: solid rgba(36, 40, 149, 0.502) 0px;
+    text-decoration: none; /* Remove a sublinha do link */
+    font-size: 18px; /* Define o tamanho da fonte */
+    padding: 18px 40px; /* Espaçamento interno do link */
+    border: solid rgba(36, 40, 149, 0.502) 0px; /* Borda do link */
 }
 
+/* Estiliza itens da lista */
 li {
-    float: left;
-    
+    float: left; /* Alinha os itens da lista à esquerda */
 }
 
+/* Estiliza links ao passar o mouse */
 a:hover {
-    background-color: rgb(36, 40, 149);
-    color: white;
-    font-size: 21px;
-    font-style: normal;
+    background-color: rgb(36, 40, 149);  
+    color: white;  
+    font-size: 21px;  
+    font-style: normal; 
 }
 
+/* Estiliza a seção principal */
 .principal {
-    font-size: 20px;
-    grid-column-start: 4;
-    grid-column-end: 12;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: justify;
+    font-size: 20px; /* Define o tamanho da fonte */
+    grid-column-start: 4; /* Inicia na coluna 4 */
+    grid-column-end: 12; /* Termina na coluna 12 */
+    padding-left: 30px; /* Espaçamento à esquerda */
+    padding-right: 30px; /* Espaçamento à direita */
+    text-align: justify; /* Justifica o texto */
 }
 
+/* Estiliza o título principal */
 h1 {
-    color: rgb(36, 40, 149);
-    text-align: center;
-    font-size: 60px;
-
+    color: rgb(36, 40, 149); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-size: 60px; /* Define o tamanho da fonte */
 }
 
+/* Estiliza subtítulos */
 h2 {            
-    color: rgb(36, 40, 149);
-    font-size: 40px;
-    grid-column-start: 4;
-    grid-column-end: 12;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: justify;
-
+    color: rgb(36, 40, 149); /* Cor do texto */
+    font-size: 40px; /* Define o tamanho da fonte */
+    grid-column-start: 4; /* Inicia na coluna 4 */
+    grid-column-end: 12; /* Termina na coluna 12 */
+    padding-left: 30px; /* Espaçamento à esquerda */
+    padding-right: 30px; /* Espaçamento à direita */
+    text-align: justify; /* Justifica o texto */
 }
 
-/* For mobile phones: */
-    [class*="col-"] {
-    width: 100%;
-    }
-
-  @media only screen and (min-width: 600px) {
-    /* For table7 */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-      
-    }
-    
-   
-  @media only screen and (min-width: 768px) {
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-  
+/* Estiliza colunas para dispositivos móveis */
+[class*="col-"] {
+    width: 100%; /* Colunas ocupam 100% da largura */
 }
 
-div.absolute {position: absolute; top: 300px; right: 0; width: 20%;}
+/* Estiliza colunas para telas de no mínimo 600px */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;} 
+    .col-s-2 {width: 16.66%;}  
+    .col-s-3 {width: 25%;}  
+    .col-s-4 {width: 33.33%;} 
+    .col-s-5 {width: 41.66%;} 
+    .col-s-6 {width: 50%;}  
+    .col-s-7 {width: 58.33%;}  
+    .col-s-8 {width: 66.66%;}  
+    .col-s-9 {width: 75%;}  
+    .col-s-10 {width: 83.33%;}  
+    .col-s-11 {width: 91.66%;} 
+    .col-s-12 {width: 100%;}  
+}
 
+/* Estiliza colunas para telas de no mínimo 768px */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}  
+    .col-2 {width: 16.66%;}  
+    .col-3 {width: 25%;}  
+    .col-4 {width: 33.33%;}  
+    .col-5 {width: 41.66%;}  
+    .col-6 {width: 50%;}  
+    .col-7 {width: 58.33%;}  
+    .col-8 {width: 66.66%;}  
+    .col-9 {width: 75%;}  
+    .col-10 {width: 83.33%;}  
+    .col-11 {width: 91.66%;}  
+    .col-12 {width: 100%;}  
+}
+
+/* Define uma div com posição absoluta */
+div.absolute {
+    position: absolute; /* Posição absoluta */
+    top: 300px; /* A 300px do topo */
+    right: 0; /* Alinhada à direita */
+    width: 20%; /* Largura de 20% */
+}
+
+/* Estiliza cartões */
 .card {
-
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0);
-    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0); /* Sombra ao redor do cartão */
+    border-radius: 10px; /* Bordas arredondadas do cartão */
 }
 
+/* Estiliza imagens dentro do cartão */
 .card img {
-
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px 25px 25px; /* Bordas arredondadas da imagem */
 }
 
+/* Estiliza botão personalizado */
 #meuBotao {
     width: 80px; /* Largura do botão */
     height: 50px; /* Altura do botão */
-    background-color: rgb(36, 40, 149, 0.4); /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remover borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de mão ao passar por cima */
+    background-color: rgb(36, 40, 149, 0.4); /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Altera o cursor para mão ao passar sobre o botão */
     
-    /* Centralizar o botão dentro da célula */
-    display: block;
-    margin: auto 0;
-  }
-  
-  /* Opcional: Mudança de cor ao passar o mouse */
-  #meuBotao:hover {
-    background-color: rgb(36, 40, 149);
-  }
-  
+    display: block; /* Exibe o botão como bloco */
+    margin: auto 0; /* Centraliza o botão verticalmente */
+}
+
+/* Muda a cor do botão ao passar o mouse */
+#meuBotao:hover {
+    background-color: rgb(36, 40, 149); /* Cor de fundo ao passar o mouse */
+}
